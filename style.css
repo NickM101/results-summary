@@ -2,9 +2,10 @@ body{
     font-family: 'Hanken Grotesk', sans-serif;
     margin: 0;
     height: 100vh;
+    width: auto;
     display: flex;
-    justify-content: center;
     place-items: center;
+    justify-content: center;
     background-color: rgb(232, 238, 255);
 }
 
@@ -73,7 +74,7 @@ body{
 }
 
 .summary {
-    padding: 2rem;
+    padding: 2em;
     width: 50%;
 }
 
@@ -88,9 +89,10 @@ body{
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: .5em;
+    padding-right: .5em;
     margin: 1em .1em;
+    width: 100%;
 }
 
 .left-side {
@@ -119,4 +121,56 @@ button {
     width: 100%;
     border-radius: 100px;
     margin-top: 1em
+}
+
+@media (max-width: 425px) {
+    .container {
+        flex-direction: column;
+        width: 80%;
+        margin: 1rem;
+    }
+
+    .result, .summary {
+        width: fit-content;
+        padding: 1.5rem 1rem;
+        border-radius: 1.5rem;
+    }
+
+    .circle {
+        height: 120px;
+        width: 120px;
+    }
+
+    .circle-title {
+        font-size: 3em;
+        margin: 1.5rem 0;
+    }
+
+    .circle-subtitle {
+        font-size: 0.8em;
+    }
+
+    .footer-title {
+        font-size: 1.5em;
+    }
+
+    .footer-subtitle {
+        font-size: 0.9em;
+    }
+
+    .summary-title {
+        font-size: 1.1em;
+    }
+
+    .summary-card {
+        flex-direction: row;
+        padding: 0.8rem;
+        margin: 0.8em 0;
+        width: 100%;
+    }
+
+    button {
+        font-size: 1em;
+        height: 3em;
+    }
 }
