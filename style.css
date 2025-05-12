@@ -1,0 +1,122 @@
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-color: rgb(232, 238, 255);
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.result p {
+    color: white;   
+}
+
+.result-title {
+    color: hsl(240, 4%, 61%);
+    font-weight: 500;
+    font-size: large;
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 500px;
+    place-content: center;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.circle-title {
+    font-size: 4em;
+    color: aliceblue;
+    line-height: .1rem;
+    margin: 2rem;
+    padding-bottom: 1rem;
+}
+
+.circle-subtitle {
+    font-size: small;
+    color: rgb(174, 154, 255);
+    line-height: .1rem;
+}
+
+.footer-title {
+    font-size: x-large;
+    line-height: 0.4em;
+}
+
+.footer-subtitle {
+    font-size: 1rem;
+    font-weight: 100;
+    color: hsl(224, 30%, 27%);
+}
+
+.summary {
+    padding: 2rem;
+    width: 50%;
+}
+
+.summary-title {
+    font-size: large;
+    font-weight: bold;
+}
+
+.summary-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin: 1em .1em;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+}
+
+.total-result {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .2em;
+    color: black;
+}
+
+.total-score {
+    color: gray;
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    font-size: medium;
+    color: aliceblue;
+    height: 3.5em;
+    width: 100%;
+    border-radius: 100px;
+    margin-top: 1em
+}

@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+			"liveFrame.url": "http://localhost:5500",
+			"liveFrame.title": "Result Summary",
+			"liveFrame.pane": "Beside"
+	}
+}
